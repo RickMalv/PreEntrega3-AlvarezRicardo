@@ -1,0 +1,15 @@
+@mixin boton{
+    display: flex;
+    background-color: $color-boton;
+    font-family: 'Work Sans', sans-serif;
+    color: $color-text;
+    margin: 1rem;
+    width: 20rem;
+    font-size: 1.2rem;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 1rem;
+}

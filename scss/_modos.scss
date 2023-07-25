@@ -1,0 +1,101 @@
+@import "variables";
+
+.main-modos{
+    background-image: url(../img/background-competir.jpg) ;
+}
+.modos-contenedor {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+.modos-contenedor-item{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4.5rem;
+    margin-bottom: 2rem;
+}
+.contenedor-texto-modos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.contenedor-texto-modos-dos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.modos-contenedor-item-dos{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.img-modos{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    max-height: 400px;
+    object-position: center;
+    min-height: 200px;
+    display: none;
+}
+.img-modos-dos{
+    object-fit: cover;
+    width: 100%;
+    max-height: 400px;
+    object-position: center;
+    min-height: 200px;
+}
+
+.titulo-algs{
+    color: $color-text;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-top: 1rem;
+
+}
+
+.parrafo-algs{
+    color: $color-text;
+    padding: 2rem;
+    text-align: center;
+}
+.video{
+    max-width: 100%;
+    position: relative;
+}
+@media screen and (min-width: 700px) {
+    .modos-contenedor-item-dos{
+        flex-direction: row;
+        justify-content: center;
+        padding: 2rem;
+
+    }
+    .titulo-algs{
+        font-size: 2rem;
+        width: 70%; 
+    }
+    .video{
+        display: none;
+    }
+    .img-modos{
+        display: block;
+    }
+    .img-modos-dos{
+        width: 50vw;
+        height: 600px;
+    }
+}
