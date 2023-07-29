@@ -14,48 +14,75 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"/>
 </head>
+
+<header class="header">  
+  <a href="index.html"><img class="logo" src="img/Apex Logo.png" alt="Apex Logo"></a>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="pages/modos.html">Modos</a></li>
+      <li><a href="pages/mapas.html">Mapas</a></li>
+      <li><a href="pages/competir.html">Competir</a></li>
+      <li><a href="pages/tienda.html">Tienda</a></li>
+    </ul>
+  </nav>
+  <label for="nav-toggle" class="nav-toggle-label">
+    <span></span>
+  </label>
+  <a class="download" href="#">DESCARGAR</a>
+</header>
+
 <body>
-  <header class="css-header">
-        
-        <a href="index.html"><img class="logo" src="img/Apex Logo.png" alt="Apex Logo"></a>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <nav class="css-nav">
-          <ul class="css-ul">
-            <li class="css-li"><a class="css-a" href="index.html">Inicio</a></li>
-            <li class="css-li"><a class="css-a" href="pages/modos.html">Modos</a></li>
-            <li class="css-li"><a class="css-a" href="pages/mapas.html">Mapas</a></li>
-            <li class="css-li"><a class="css-a" href="pages/competir.html">Competir</a></li>
-            <li class="css-li"><a class="css-a" href="pages/tienda.html">Tienda</a></li>
-          </ul>
-        </nav>
-        <label for="nav-toggle" class="nav-toggle-label">
-          <span></span>
-        </label>
-        <a class="download" href="#">DESCARGAR</a>
-    </header>
-    <main>
+  <main class="home-main">
         <div class="contenedor">
-            <section class="contedor-home-uno">
-                <img class="home-img-uno" src="img/home-page-1-mobile.jpg" alt="Ballistic-imagen">
-                    <div class="contenedor-texto">
-                        <h1 class="titulo-uno">APEX LEGENDS</h1>
-                        <p class="parrafo-uno">Demuestra tu calibre en Apex Legends: Arsenal con la nueva leyenda (Ballistic), un Fin del mundo actualizado, un campo de tiro evolucionado y mucho más.</p>
-                    </div>
-            </section>
-            <section class="contedor-home-dos">
-                <img class="home-img-uno" src="img/home-page-3-mobile.jpg" alt="Ballistic-imagen">
+            <div class="contenedor-home-uno">
+              <!-- <div> -->
+                <!-- <img class="home-img-uno" src="img/home-page-1-mobile.jpg" alt="Ballistic-imagen"> -->
+                
+              <!-- </div> -->
+              <div class="contenedor-texto">
+                <div class="spacer"></div>
+                <img class="home-apex-logo" src="img/apex-hero-medium-logo-light.svg" alt="Apex Logo">
+                <p  class="parrafo-uno">Demuestra tu calibre en Apex Legends: Arsenal con la nueva leyenda (Ballistic), un Fin del mundo actualizado, un campo de tiro evolucionado y mucho más.</p>
+                <div class="botones-jugar">
+                  <a class="boton-jugar" href="https://www.ea.com/es-es/games/apex-legends/play-now-for-free">Jugar gratis ahora*</a>
+                  <a class="boton-trailer" href="https://www.youtube.com/watch?v=C-WQcCqecHg&t=30s&ab_channel=ApexLegends">Ver trailer del juego</a>
+                </div>     
+              </div>
+              <video class="home-vid-uno" autoplay muted loop>
+                <source src="../img/Video-Intro.webm">
+              </video>     
+            </div>
+          </div>
+        <div class="competir-contenedor">
+          <!-- <section class="competir-contenedor-item">
+              <video autoplay muted loop class="video">
+                  <source src="../img/Video-Intro.webm">
+              </video>
+              <img class="img-competir" src="../img/algs-publico.jpg" alt="Imagen ALGS Publico">
+              <div class="contenedor-texto-competir">
+                  <img class="home-logo-algs" src="../img/algs-logo.png" alt="Logo">
+                  <h1 class="titulo-algs">te damos la bievenida al tercer año de la
+                  algs </h1>
+              </div>  
+          </section>
+          </div>         -->
+
+            <section class="contenedor-home-dos">
                     <div class="contenedor-texto-dos">
-                        <h1 class="titulo-uno">APUNTA Y DISPARA</h1>
-                        <p class="parrafo-uno">Apex Legends incorpora potencia de fuego de vanguardia con la nueva leyenda (Ballistic), un campo de tiro evolucionado, un sistema de progresión de maestría de armas y actualizaciones para el campo de batalla más caótico de todas las Tierras Salvajes.</p>
+                        <h1 class="titulo-dos">APUNTA Y DISPARA</h1>
+                        <p class="parrafo-dos">Apex Legends incorpora potencia de fuego de vanguardia con la nueva leyenda (Ballistic), un campo de tiro evolucionado, un sistema de progresión de maestría de armas y actualizaciones para el campo de batalla más caótico de todas las Tierras Salvajes.</p>
                     </div>
+                    <img class="home-img-uno" src="img/home-page-3-mobile.jpg" alt="Ballistic-imagen">
             </section>
-            <section class="contedor-home-dos">
+            <!-- <section class="contedor-home-dos">
                 <img class="home-img-uno" src="img/home-page-2-mobile.jpg" alt="Lifeline-imagen">
                 <div class="contenedor-texto">
                     <h1 class="titulo-dos">VARIADO</h1>
                     <p class="parrafo-dos">Presume de habilidades en Variado, un modo de juego permanente con rotación de TCT (equipo), Control y Carrera de armas.</p>  
                 </div>
-            </section>
+            </section> -->
         </div>
         <footer>
             <div class="container-fluid">
@@ -77,36 +104,31 @@
                     <a
                       class="text-secondary text-decoration-none"
                       href="index.html"
-                      >Inicio</a
-                    >
+                      >Inicio</a>
                   </div>
                   <div class="mb-1">
                     <a
                       class="text-secondary text-decoration-none"
                       href="/pages/modos.html"
-                      >Modos</a
-                    >
+                      >Modos</a>
                   </div>
                   <div class="mb-1">
                     <a
                       class="text-secondary text-decoration-none"
                       href="/pages/mapas.html"
-                      >Mapas</a
-                    >
+                      >Mapas</a>
                   </div>
                   <div class="mb-1">
                     <a
                       class="text-secondary text-decoration-none"
                       href="pages/competir.html"
-                      >Competir</a
-                    >
+                      >Competir</a>
                   </div>
                   <div class="mb-1">
                     <a
                       class="text-secondary text-decoration-none"
                       href="pages/tienda.html"
-                      >Tienda</a
-                    >
+                      >Tienda</a>
                   </div>
                 </div>
                 <div class="col col-md-6 col-lg-3">
@@ -115,22 +137,19 @@
                     <a
                       class="text-secondary text-decoration-none"
                       href="https://www.instagram.com/?next="
-                      >Instagram</a
-                    >
+                      >Instagram</a>
                   </div>
                   <div class="mb-1">
                     <a
                       class="text-secondary text-decoration-none"
                       href="https://www.facebook.com"
-                      >Facebook</a
-                    >
+                      >Facebook</a>
                   </div>
                   <div class="mb-1">
                     <a
                       class="text-secondary text-decoration-none"
                       href="https://twitter.com/?lang=es"
-                      >Twitter</a
-                    >
+                      >Twitter</a>
                   </div>
                 </div>
                 <div class="container-footer">

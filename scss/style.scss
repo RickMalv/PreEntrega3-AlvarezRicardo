@@ -10,12 +10,16 @@
 @import "modos";
 
 
+@font-face{
+    font-family: custom-font;
+    src: url(../fonts/custom-font.woff2);
+}
 *,
 *::before,
 *::after{
     box-sizing: border-box;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 600;
+    font-family: custom-font;
+    font-weight: 400;
 }
 
 
