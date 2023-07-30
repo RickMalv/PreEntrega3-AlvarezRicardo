@@ -154,6 +154,9 @@ nav a:hover {
 footer {
   background-color: #161616; }
 
+#logo-footer {
+  justify-content: center; }
+
 .home-main {
   background-color: #17b17e;
   z-index: 0; }
