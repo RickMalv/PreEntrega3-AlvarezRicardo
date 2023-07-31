@@ -77,6 +77,12 @@
     max-width: 100%;
     position: relative;
 }
+.carousel-inner-competir{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-auto-flow: column;
+}
 @media screen and (min-width: 700px) {
     .competir-contenedor-item-dos{
         flex-direction: row;
