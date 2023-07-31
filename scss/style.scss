@@ -8,6 +8,7 @@
 @import "competir";
 @import "tienda";
 @import "modos";
+@import "tablet";
 
 
 @font-face{
@@ -33,9 +34,9 @@ body{
     background-repeat: repeat;
     background-size: cover;
 }
-img picture{
-    max-width: 100%;
-}
+// img picture{
+//     max-width: 100%;
+// }
 
 
 

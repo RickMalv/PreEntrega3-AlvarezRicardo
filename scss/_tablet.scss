@@ -1,0 +1,42 @@
+@import "variables";
+
+@media screen and (min-width:600px) {
+//Home
+    .carta{
+        aspect-ratio: auto;
+    }
+    .home-contenido{
+        background-color: transparent;
+        align-self: center;
+        &-variado{
+            margin-right: 3rem;
+        }
+    }
+    .home-img{
+        &-uno{
+            aspect-ratio: auto;
+            object-fit: cover;
+            height: 100%;
+        }
+            
+        &-dos{
+            // aspect-ratio: 1/1;
+            // width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+    }
+    .home-grid{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            border: none;
+        }   
+    .stacked-variado{
+    justify-items: flex-end;
+    width: 100%;
+
+}
+
+}

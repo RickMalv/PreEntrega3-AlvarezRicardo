@@ -65,10 +65,12 @@
     flex-direction: column;
     align-self: center;
     align-items: center;
+    text-shadow: 1px 1px 25px $color-text-secundario;
 }
 .home-contenido{
     background-color: $color-bg-secundario;
     align-self: end;
+    
 }
 
 .contenedor-texto{

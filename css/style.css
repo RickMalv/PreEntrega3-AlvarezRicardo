@@ -215,7 +215,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-self: center;
-  align-items: center; }
+  align-items: center;
+  text-shadow: 1px 1px 25px #161616; }
 
 .home-contenido {
   background-color: #081422;
@@ -623,6 +624,30 @@ main div h3 {
     min-width: 6rem;
     min-height: 8rem; } }
 
+@media screen and (min-width: 600px) {
+  .carta {
+    aspect-ratio: auto; }
+  .home-contenido {
+    background-color: transparent;
+    align-self: center; }
+    .home-contenido-variado {
+      margin-right: 3rem; }
+  .home-img-uno {
+    aspect-ratio: auto;
+    object-fit: cover;
+    height: 100%; }
+  .home-img-dos {
+    height: 100%;
+    object-fit: cover; }
+  .home-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: none; }
+  .stacked-variado {
+    justify-items: flex-end;
+    width: 100%; } }
+
 @font-face {
   font-family: custom-font;
   src: url(../fonts/custom-font.woff2); }
@@ -643,6 +668,3 @@ body {
   background-position: center;
   background-repeat: repeat;
   background-size: cover; }
-
-img picture {
-  max-width: 100%; }
