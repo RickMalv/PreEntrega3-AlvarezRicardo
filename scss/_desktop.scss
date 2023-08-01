@@ -1,0 +1,22 @@
+@import "variables";
+
+@media screen and (min-width:1000px) {
+//Home
+.home-contenido-variado{
+    padding-right: 4rem;
+}
+
+.botones-jugar{
+  flex-wrap: nowrap;
+  width: 100%;  
+}
+.boton-trailer, .boton-jugar{
+    width: 25%;
+}
+.boton-mas-info{
+    width: clamp(25%,calc(2.1vw + 1rem), 30rem);
+    &-secundario{
+        width: clamp(50%,calc(2.1vw + 1rem), 30rem);
+    }
+}
+}

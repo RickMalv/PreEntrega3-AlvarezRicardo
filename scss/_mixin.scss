@@ -1,7 +1,7 @@
 @mixin boton{
     display: flex;
     background-color: $color-boton;
-    font-family: 'Work Sans', sans-serif;
+    font-family: custom-font;
     color: $color-text;
     margin: 1rem;
     width: 20rem;
@@ -22,9 +22,9 @@
     text-align: center;
     border-radius: 3px;
     text-decoration: none;
-    padding: 0.5rem;
+    padding: 1rem;
     margin: 0.5rem;
-    width: 90%;
+    width: 100%;
 }
 @mixin home-boton-secundario{
     background-color: $color-boton-secundario;
@@ -35,7 +35,16 @@
     text-align: center;
     border-radius: 3px;
     text-decoration: none;
-    padding: 0.5rem;
+    padding: 1rem;
     margin: 0.5rem;
-    width: 90%;
+    width: 100%;
+    &:hover{
+        color: $color-hover;
+      }
+}
+@mixin fuente-titulo{
+    font-family: duke-fill;
+    text-transform: uppercase;
+    font-size: clamp(2rem,calc(2.1vw + 1rem), 5rem);
+    font-weight: 400;
 }
