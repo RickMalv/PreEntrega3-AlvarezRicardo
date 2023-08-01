@@ -316,7 +316,8 @@ footer {
   text-transform: uppercase;
   font-size: clamp(2rem, calc(2.1vw + 1rem), 5rem);
   font-weight: 400;
-  color: #f3f3f3; }
+  color: #f3f3f3;
+  padding-top: 2rem; }
 
 .titulo-dos {
   font-family: duke-fill;
@@ -648,6 +649,8 @@ main div h3 {
   .home-contenido {
     background-color: transparent;
     align-self: center; }
+    .home-contenido-variado {
+      margin-right: 3rem; }
   .home-img-uno {
     aspect-ratio: auto;
     object-fit: cover;
@@ -666,7 +669,7 @@ main div h3 {
 
 @media screen and (min-width: 1000px) {
   .home-contenido-variado {
-    padding-right: 4rem; }
+    padding-right: 20%; }
   .botones-jugar {
     flex-wrap: nowrap;
     width: 100%; }

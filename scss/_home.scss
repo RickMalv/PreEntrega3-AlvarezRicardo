@@ -139,6 +139,7 @@
 .titulo-uno{
     @include fuente-titulo;
     color: $color-text;
+    padding-top: 2rem;
 
 }
 .titulo-dos{
