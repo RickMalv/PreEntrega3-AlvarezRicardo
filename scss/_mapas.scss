@@ -11,15 +11,40 @@
 
 .mapa-contenedor{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
     padding: 2rem;
-    }
-    // margin: 1rem 3rem 6rem 3rem;
-.nombre-mapa{
-    text-align: center;
+    gap: 1rem;
 }
+.mapa-box{
+    flex: 1;
+    overflow: hidden;
+    width: 100%;
+    transition: 0.5s;
+    margin: 0 .5%;
+    box-shadow: 0px 4px 8px #ccc;
+    background-color: $color-text;
+    img{
+        width: 100%;
+        height: calc(100%-10vh);
+        object-fit: cover;
+        transition: 1.5s;
+    }
+    &:hover{
+        flex: 1 1 50%;   
+    }
+    &:hover img{
+        width: 100%;
+    }
+    .nombre-mapa{
+        font-size: clamp(1rem,calc(2.1vw), 2rem);
+        display: block;
+        margin: 1rem;
+        text-align: center;
+        height: 10vh;
+        line-height: 2.5;
+    }
+}
+
 
 .titulo-mapas {
     margin-top: 2rem;
@@ -44,7 +69,6 @@
 
 main div {
         .mapa-imagen{
-        max-width: 100%;
         min-height: 400px;
         object-fit: cover;
         transition: 0.25s ease;
@@ -52,28 +76,24 @@ main div {
             transform: scale(1.1);
         }
     }
-    h3{
-        font-size: 1/5rem;
-        padding: 1rem;
-    }
 }
     
-
-
-/*mq de mapas*/
 @media screen and (min-width:700px) {
     .mapa-contenedor{
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 2fr);
+        grid-template-rows: repeat(2, 1fr);
         padding: 2rem;
     }
     
 }
 @media screen and (min-width:1000px) {
     .mapa-contenedor{
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        padding: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 4% 2%;
+        height: 50%;
     }
     
 }
