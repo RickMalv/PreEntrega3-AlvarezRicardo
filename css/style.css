@@ -65,7 +65,7 @@ nav a {
   color: #f3f3f3;
   text-decoration: none;
   font-family: duke-fill;
-  font-size: clamp(10px, calc(2.8vw + 0.5rem), 30px);
+  font-size: clamp(20px, calc(2.8vw + 1rem), 30px);
   text-transform: uppercase;
   opacity: 0;
   transition: opacity 150ms ease-in-out; }
@@ -147,10 +147,6 @@ nav a:hover {
     transition: transform ease-in-out 250ms; }
   nav a:hover::before {
     transform: scale(1, 1); } }
-
-@media screen and (max-width: 1000px) {
-  header .download {
-    display: none; } }
 
 footer {
   background-color: #161616; }
@@ -330,7 +326,7 @@ footer {
 .mapa-contenedor-titulo {
   display: flex;
   flex-direction: column;
-  padding-top: 5rem; }
+  padding-top: 7rem; }
 
 .mapa-contenedor {
   display: grid;
@@ -348,20 +344,22 @@ footer {
   background-color: #f3f3f3; }
   .mapa-box img {
     width: 100%;
-    height: calc(100%-10vh);
     object-fit: cover;
-    transition: 1.5s; }
+    transition: 2.5s ease-out;
+    min-height: 400px; }
   .mapa-box:hover {
     flex: 1 1 50%; }
   .mapa-box:hover img {
     width: 100%; }
-  .mapa-box .nombre-mapa {
-    font-size: clamp(1rem, calc(2.1vw), 2rem);
-    display: block;
-    margin: 1rem;
-    text-align: center;
-    height: 10vh;
-    line-height: 2.5; }
+
+.mapa-nombre {
+  font-size: clamp(1rem, calc(2.1vw), 2rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  line-height: 1.5;
+  padding: 2rem; }
 
 .titulo-mapas {
   margin-top: 2rem;
@@ -391,28 +389,6 @@ footer {
   padding: 1rem; }
   .mapa-mas-info-boton:hover {
     color: #f3f3f3; }
-
-main div .mapa-imagen {
-  min-height: 400px;
-  object-fit: cover;
-  transition: 0.25s ease; }
-  main div .mapa-imagen:hover {
-    transform: scale(1.1); }
-
-@media screen and (min-width: 700px) {
-  .mapa-contenedor {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    padding: 2rem; } }
-
-@media screen and (min-width: 1000px) {
-  .mapa-contenedor {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 4% 2%;
-    height: 50%; } }
 
 .main-competir {
   background-image: url(../img/background-competir.jpg); }
@@ -683,6 +659,8 @@ main div .mapa-imagen {
     min-height: 8rem; } }
 
 @media screen and (min-width: 600px) {
+  header .download {
+    display: none; }
   .carta {
     aspect-ratio: auto; }
   .home-contenido {
@@ -704,9 +682,16 @@ main div .mapa-imagen {
     border: none; }
   .stacked-variado {
     justify-items: flex-end;
-    width: 100%; } }
+    width: 100%; }
+  .mapa-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 2rem; } }
 
 @media screen and (min-width: 1000px) {
+  header .download {
+    display: flex; }
   .home-contenido-variado {
     padding-right: 20%; }
   .botones-jugar {
@@ -717,7 +702,11 @@ main div .mapa-imagen {
   .boton-mas-info {
     width: clamp(25%, calc(2.1vw + 1rem), 30rem); }
     .boton-mas-info-secundario {
-      width: clamp(50%, calc(2.1vw + 1rem), 30rem); } }
+      width: clamp(50%, calc(2.1vw + 1rem), 30rem); }
+  .mapa-contenedor {
+    display: flex;
+    width: 100%;
+    padding: 4% 2%; } }
 
 @font-face {
   font-family: custom-font;

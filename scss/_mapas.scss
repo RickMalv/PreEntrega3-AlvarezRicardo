@@ -6,7 +6,7 @@
 .mapa-contenedor-titulo{
     display: flex;
     flex-direction: column;
-    padding-top: 5rem;
+    padding-top: 7rem;
 }
 
 .mapa-contenedor{
@@ -15,6 +15,7 @@
     padding: 2rem;
     gap: 1rem;
 }
+
 .mapa-box{
     flex: 1;
     overflow: hidden;
@@ -25,9 +26,9 @@
     background-color: $color-text;
     img{
         width: 100%;
-        height: calc(100%-10vh);
         object-fit: cover;
-        transition: 1.5s;
+        transition: 2.5s ease-out;
+        min-height: 400px;
     }
     &:hover{
         flex: 1 1 50%;   
@@ -35,16 +36,17 @@
     &:hover img{
         width: 100%;
     }
-    .nombre-mapa{
-        font-size: clamp(1rem,calc(2.1vw), 2rem);
-        display: block;
-        margin: 1rem;
-        text-align: center;
-        height: 10vh;
-        line-height: 2.5;
-    }
 }
 
+.mapa-nombre{
+    font-size: clamp(1rem,calc(2.1vw), 2rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    line-height: 1.5;
+    padding: 2rem;
+}
 
 .titulo-mapas {
     margin-top: 2rem;
@@ -59,6 +61,7 @@
     font-size: 1.5em;
      
 }
+
 .mapa-mas-info-boton{
     @include boton;
     &:hover{
@@ -66,34 +69,3 @@
     }
 }
 
-
-main div {
-        .mapa-imagen{
-        min-height: 400px;
-        object-fit: cover;
-        transition: 0.25s ease;
-        &:hover{
-            transform: scale(1.1);
-        }
-    }
-}
-    
-@media screen and (min-width:700px) {
-    .mapa-contenedor{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        padding: 2rem;
-    }
-    
-}
-@media screen and (min-width:1000px) {
-    .mapa-contenedor{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        padding: 4% 2%;
-        height: 50%;
-    }
-    
-}

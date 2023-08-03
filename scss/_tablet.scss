@@ -1,7 +1,15 @@
 @import "variables";
 
 @media screen and (min-width:600px) {
-//Home
+    //navbar
+    header{
+        .download {
+        display: none;
+        }
+    }
+
+    //Home
+
     .carta{
         aspect-ratio: auto;
     }
@@ -20,8 +28,6 @@
         }
             
         &-dos{
-            // aspect-ratio: 1/1;
-            // width: 100%;
             height: 100%;
             object-fit: cover;
         }
@@ -39,4 +45,14 @@
 
 }
 
+//mapa
+.mapa-contenedor{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 2rem;
 }
+
+}
+
+
