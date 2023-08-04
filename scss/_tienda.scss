@@ -6,6 +6,7 @@
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
+    padding-top: 2rem;
 
 }
 
@@ -72,24 +73,4 @@
     &:hover{
         color: $color-hover;
     }
-}
-/*mq de tienda*/
-
-@media screen and (min-width:700px) {
-    .contenedor-tienda{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    } 
-}
-@media screen and (min-width:1000px) {
-    .contenedor-tienda{
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-    .carousel-img{
-        width: 100%;
-        aspect-ratio: auto;
-        object-fit: cover;
-    
-    } 
 }

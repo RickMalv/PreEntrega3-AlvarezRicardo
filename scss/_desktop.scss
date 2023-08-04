@@ -41,6 +41,9 @@ header{
     padding-left: 25%;
     padding-right: 25%;
 }
+.mapa-nombre{
+    padding: 2rem;
+}
 .mapa-box:hover .mapa-parrafo{
     display: flex;
     position: absolute;
@@ -52,4 +55,21 @@ header{
     align-items: center;
     border: none;
     }
+
+
+
+//tienda
+
+.contenedor-tienda{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
+.carousel-img{
+    width: 100%;
+    aspect-ratio: auto;
+    object-fit: cover;
+
+} 
+
+}
+
