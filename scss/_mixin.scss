@@ -1,3 +1,9 @@
+@mixin flex-center-column{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 @mixin boton{
     display: flex;
     background-color: $color-boton;
@@ -13,19 +19,6 @@
     text-decoration: none;
     padding: 1rem;
 }
-// @mixin home-boton{
-//     background-color: $color-boton;
-//     font-family: custom-font;
-//     text-transform: uppercase;
-//     color: $color-text;
-//     font-size: 1.2rem;
-//     text-align: center;
-//     border-radius: 3px;
-//     text-decoration: none;
-//     padding: 1rem;
-//     margin: 1rem;
-//     width: 100%;
-// }
 @mixin home-boton{
     background-color: $color-boton;
     font-family: custom-font;

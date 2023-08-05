@@ -1,4 +1,3 @@
-/* nav styles */
 header {
   background-color: #161616;
   text-align: center;
@@ -83,70 +82,6 @@ nav a:hover {
 .logo {
   width: 100px;
   padding: 0.8rem; }
-
-@media screen and (min-width: 700px) {
-  .nav-toggle-label {
-    display: none; }
-  header {
-    display: grid;
-    grid-template-columns: 1fr 1fr minmax(600px, 3fr) 1fr;
-    align-items: center;
-    justify-items: center;
-    gap: 0.5rem; }
-    header .download {
-      display: flex;
-      background-color: #DA292A;
-      font-family: custom-font;
-      color: #f3f3f3;
-      font-size: 1.2rem;
-      height: 50%;
-      padding: 1rem;
-      justify-content: center;
-      align-items: center;
-      border-radius: 3px;
-      text-decoration: none; }
-      header .download:hover {
-        color: #f3f3f3; }
-    header .logo {
-      width: 100px; }
-    header nav {
-      position: relative;
-      text-align: center;
-      transition: none;
-      transform: scale(1, 1);
-      background: none;
-      top: initial;
-      left: initial;
-      grid-column: 2 / 4;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      header nav ul {
-        display: flex;
-        height: 100%; }
-        header nav ul li {
-          padding-right: 1rem;
-          padding-bottom: 0; }
-  nav li {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    nav li a {
-      opacity: 1;
-      position: relative; }
-  nav a::before {
-    content: '';
-    display: block;
-    height: 5px;
-    background: #DA292A;
-    position: absolute;
-    top: -.75em;
-    left: 0;
-    right: 0;
-    transform: scale(0, 1);
-    transition: transform ease-in-out 250ms; }
-  nav a:hover::before {
-    transform: scale(1, 1); } }
 
 footer {
   background-color: #161616; }
@@ -435,18 +370,14 @@ footer {
   margin-top: 5.5rem;
   margin-bottom: 2rem; }
 
-.contenedor-texto-competir {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: absolute; }
-
-.contenedor-texto-competir-dos {
+.contenedor-texto-competir-dos, .contenedor-texto-competir {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+
+.contenedor-texto-competir {
+  position: absolute; }
 
 .competir-contenedor-item-dos {
   display: flex;
@@ -667,6 +598,68 @@ footer {
 @media screen and (min-width: 600px) {
   header .download {
     display: none; }
+  .nav-toggle-label {
+    display: none; }
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr minmax(600px, 3fr) 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 0.5rem; }
+    header .download {
+      display: flex;
+      background-color: #DA292A;
+      font-family: custom-font;
+      color: #f3f3f3;
+      font-size: 1.2rem;
+      height: 50%;
+      padding: 1rem;
+      justify-content: center;
+      align-items: center;
+      border-radius: 3px;
+      text-decoration: none; }
+      header .download:hover {
+        color: #f3f3f3; }
+    header .logo {
+      width: 100px; }
+    header nav {
+      position: relative;
+      text-align: center;
+      transition: none;
+      transform: scale(1, 1);
+      background: none;
+      top: initial;
+      left: initial;
+      grid-column: 2 / 4;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      header nav ul {
+        display: flex;
+        height: 100%; }
+        header nav ul li {
+          padding-right: 1rem;
+          padding-bottom: 0; }
+  nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    nav li a {
+      opacity: 1;
+      position: relative; }
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background: #DA292A;
+    position: absolute;
+    top: -.75em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms; }
+  nav a:hover::before {
+    transform: scale(1, 1); }
   .carta {
     aspect-ratio: auto; }
   .home-contenido {

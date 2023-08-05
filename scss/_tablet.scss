@@ -5,6 +5,86 @@
         display: none;
         }
     }
+    .nav-toggle-label {
+        display: none;
+      }
+    
+    header {
+    display: grid;
+    grid-template-columns: 1fr 1fr minmax(600px, 3fr) 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 0.5rem;
+        .download{
+            display: flex;
+            background-color: $color-boton;
+            font-family: custom-font;
+            color: $color-text;
+            font-size: 1.2rem;
+            height: 50%;
+            padding: 1rem;
+            justify-content: center;
+            align-items: center;
+            border-radius: 3px;
+            text-decoration: none;
+            &:hover{
+                color: $color-text;
+            }
+        }
+        .logo {
+            width: 100px;
+            }
+        nav{
+            position: relative;
+            text-align: center;
+            transition: none;
+            transform: scale(1,1);
+            background: none;
+            top: initial;
+            left: initial;
+            grid-column: 2 / 4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            ul{
+                display: flex;
+                height: 100%;
+                li{
+                    padding-right: 1rem;
+                    padding-bottom: 0;
+                } 
+            }
+        }
+    }
+    nav li  {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+        opacity: 1;
+        position: relative;
+        
+    }
+    }
+    
+    
+    nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background: $color-hover;
+    position: absolute;
+    top: -.75em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+    }
+    
+    nav a:hover::before {
+    transform: scale(1,1);
+    }
 
     //Home
 

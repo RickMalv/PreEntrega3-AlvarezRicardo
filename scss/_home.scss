@@ -9,21 +9,15 @@
     width: 100%;
    
 }
-
 .spacer{
     height: $spacer-height-mobile;
 }
 .contenedor-home-uno{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-center-column;
     position: relative;
     overflow: hidden;
     width: 100%;
 }
-
-
 .home-vid-uno{
     top: 50%;
     left: 50%;
@@ -71,7 +65,6 @@
     align-self: end;
     
 }
-
 .contenedor-texto{
     display: flex;
     flex-direction: column;
@@ -82,8 +75,6 @@
     padding: 30px;
     z-index: 2; 
 }
-
-
 .home-apex-logo{
     width: clamp(100px,70vw, 300px);
     align-self: center;
@@ -116,9 +107,7 @@
     color: $color-text-secundario;
     text-transform: capitalize;
 
-    }
-
-
+}
 .parrafo-uno{
     padding: 1rem 2rem;
     max-width: 40ch;

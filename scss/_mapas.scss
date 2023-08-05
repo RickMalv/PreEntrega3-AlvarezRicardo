@@ -40,8 +40,7 @@
         height: 100%;
         min-height: 400px;
         object-fit: cover;
-        transition: 2.5s ease-out;
-        
+        transition: 2.5s ease-out;   
     }
     &:hover{
         flex: 1 1 50%;   
@@ -89,8 +88,7 @@
 .mapa-mas-info-boton{
     @include boton;
     &:hover{
-        color: $color-text;
-        
+        color: $color-text;       
     }
 }
 

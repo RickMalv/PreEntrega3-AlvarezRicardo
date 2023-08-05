@@ -10,27 +10,18 @@
     width: 100%;
 }
 .modos-contenedor-item{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-center-column;
     height: 100%;
     width: 100%;
     padding-top: 5rem;
     margin-bottom: 2rem;
 }
 .contenedor-texto-modos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-center-column;
     position: absolute;
 }
 .contenedor-texto-modos-dos{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    @include flex-center-column;
 }
 
 .modos-contenedor-item-dos{
