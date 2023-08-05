@@ -164,7 +164,7 @@ footer {
   z-index: 2; }
 
 .home-apex-logo {
-  width: clamp(100px, 70vw, 300px);
+  width: clamp(100px, 70vh, 300px);
   align-self: center; }
 
 .home-logo-algs {
