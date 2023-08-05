@@ -67,7 +67,7 @@
     font-family: $fuente-titulo;
     text-align: center;
     text-transform: uppercase;
-    font-size: $fuente-titulo-altura;
+    font-size: clamp(1rem, calc(3.5vh + 0.7rem), 3rem);
     margin-top: 1rem;
 
 }
@@ -82,16 +82,15 @@
 }
 .parrafo-modos{
     color: $color-text;
-    padding: 0;
+    padding: 1rem 2rem;
     text-align: center;
-    font-size: $fuente-altura;
+    font-size: clamp(1rem, calc(1vh + 0.7rem), 1.5rem);
     max-width: 90%;
 }
 .subparrafo-modos{
     color: $color-text;
-    padding: 0;
     text-align: center;
-    font-size: clamp(1rem, calc(1vh + 0.7rem), 1.5rem);
+    font-size: clamp(1rem, calc(1vh + 0.6rem), 1.4rem);
     max-width: 90%;
-    padding: 0 1rem;
+    padding: 1rem;
 }
