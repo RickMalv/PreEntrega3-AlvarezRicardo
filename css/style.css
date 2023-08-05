@@ -355,19 +355,15 @@ footer {
   background-repeat: repeat;
   background-size: cover; }
 
-.competir-contenedor {
+.competir-contenedor, .competir-contenedor-item, .competir-contenedor-item-dos {
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 100%; }
 
 .competir-contenedor-item {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 100%;
   margin-top: 5.5rem;
   margin-bottom: 2rem; }
 
@@ -381,12 +377,8 @@ footer {
   position: absolute; }
 
 .competir-contenedor-item-dos {
-  display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 100%;
-  width: 100%;
   margin-bottom: 2rem;
   background: #1d1718;
   background: radial-gradient(circle, #1d1718 0%, rgba(25, 13, 17, 0.210522) 99%); }
@@ -721,7 +713,7 @@ footer {
     width: 50%;
     aspect-ratio: 16/9; } }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1024px) {
   header .download {
     visibility: visible;
     display: flex; }

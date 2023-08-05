@@ -1,4 +1,4 @@
-@media screen and (min-width:1000px) {
+@media screen and (min-width:1024px) {
 //header
     header{
         .download {
@@ -6,10 +6,7 @@
         display: flex;
         }
     }
-
-
     //Home
-
     .home-contenido-variado{
         padding-right: 20%;
     }
@@ -27,7 +24,6 @@
             width: clamp(50%,calc(2.1vw + 1rem), 30rem);
         }
     }
-
     //mapas
     .mapa-contenedor{
         display: flex;
@@ -55,10 +51,7 @@
         border: none;
         }
 
-
-
     //tienda
-
     .contenedor-tienda{
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -67,7 +60,6 @@
         width: 100%;
         aspect-ratio: auto;
         object-fit: cover;
-
     } 
     //modos
     .modos-contenedor-item-dos{
@@ -76,6 +68,5 @@
     .img-modos-dos{
         width: 50%;
     }
-
 }
 
