@@ -2,7 +2,7 @@
     //navbar
     header{
         .download {
-        display: none;
+        visibility: hidden;
         }
     }
     .nav-toggle-label {
@@ -11,7 +11,7 @@
     
     header {
     display: grid;
-    grid-template-columns: 1fr 1fr minmax(600px, 3fr) 1fr;
+    grid-template-columns: 1fr 1fr minmax(500px, 3fr) 1fr;
     align-items: center;
     justify-items: center;
     gap: 0.5rem;
@@ -44,7 +44,7 @@
             left: initial;
             grid-column: 2 / 4;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             ul{
                 display: flex;

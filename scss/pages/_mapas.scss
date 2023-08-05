@@ -1,6 +1,6 @@
 /* mapas*/
-@import "variables";
-@import "mixin";
+@import "../utilities/variables";
+@import "../utilities/mixin";
 
 /* mapas*/
 .main-mapas{
@@ -73,8 +73,9 @@
 
 .titulo-mapas {
     padding: 2rem;
+    font-family: duke-fill;
     text-align: center;
-    font-size: clamp(1.5rem, calc(3vh + 0.7rem), 2rem);
+    font-size: clamp(1.5rem, calc(4vh + 0.7rem), 3rem);
 }
 .subtitulo-mapas, .mapa-mas-info{
     display: flex;

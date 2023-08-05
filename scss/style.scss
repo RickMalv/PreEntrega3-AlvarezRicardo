@@ -1,14 +1,14 @@
-@import "navbar";
-@import "footer";
-@import "home";
-@import "mapas";
-@import "variables";
-@import "mixin";
-@import "competir";
-@import "tienda";
-@import "modos";
-@import "tablet";
-@import "desktop";
+@import "pages/navbar";
+@import "pages/footer";
+@import "pages/home";
+@import "pages/mapas";
+@import "utilities/variables";
+@import "utilities/mixin";
+@import "pages/competir";
+@import "pages/tienda";
+@import "pages/modos";
+@import "pages/tablet";
+@import "pages/desktop";
 
 
 @font-face{

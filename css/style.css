@@ -320,8 +320,9 @@ footer {
 
 .titulo-mapas {
   padding: 2rem;
+  font-family: duke-fill;
   text-align: center;
-  font-size: clamp(1.5rem, calc(3vh + 0.7rem), 2rem); }
+  font-size: clamp(1.5rem, calc(4vh + 0.7rem), 3rem); }
 
 .subtitulo-mapas, .mapa-mas-info {
   display: flex;
@@ -597,12 +598,12 @@ footer {
 
 @media screen and (min-width: 600px) {
   header .download {
-    display: none; }
+    visibility: hidden; }
   .nav-toggle-label {
     display: none; }
   header {
     display: grid;
-    grid-template-columns: 1fr 1fr minmax(600px, 3fr) 1fr;
+    grid-template-columns: 1fr 1fr minmax(500px, 3fr) 1fr;
     align-items: center;
     justify-items: center;
     gap: 0.5rem; }
@@ -632,7 +633,7 @@ footer {
       left: initial;
       grid-column: 2 / 4;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center; }
       header nav ul {
         display: flex;
@@ -722,6 +723,7 @@ footer {
 
 @media screen and (min-width: 1000px) {
   header .download {
+    visibility: visible;
     display: flex; }
   .home-contenido-variado {
     padding-right: 20%; }
