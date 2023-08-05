@@ -6,14 +6,12 @@
     <meta name="description" content="Apex Legends es un juego gratuito de acción en primera persona, donde combatientes legendarios se enfrentan para lograr gloria, fama y fortuna.">
     <meta name="keywords" content="Battle Royale, Video Juego, Wraith, Valk, Pathfinder, EA, Electronic Arts, Respwan">
     <title>Competir</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="https://kit.fontawesome.com/7696b798c9.js"crossorigin="anonymous"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
@@ -37,10 +35,11 @@
       <main class="main-modos">
         <div class="modos-contenedor">
             <section class="modos-contenedor-item">
-                <video autoplay muted loop class="video-modos">
-                    <source src="../img/ALGS-Video.mp4">
-                </video>
-                <img class="img-modos" src="../img/valk.jpg" alt="Valk">
+                <picture class="img-modos-contenedor">
+                  <source srcset="../img/br-page-1-desktop.jpg" media="(min-width: 1000px)"> 
+                  <source srcset="../img/br-page-1-tablet.jpg" media="(min-width: 600px)">                
+                  <img class="img-modos" src="../img/br-page-1-mobile.jpg" alt="Valk">
+                </picture>
                 <div class="contenedor-texto-modos">
                     <img class="logo-br" src="../img/br-logo.png" alt="Logo">
                     <h1 class="titulo-modos">BATTLE ROYALE </h1>
@@ -49,17 +48,17 @@
             </section>
             <section class="modos-contenedor-item-dos">
                 <div class="contenedor-texto-modos-dos">
-                    <h1 class="titulo-modos">PERMANECE DENTRO DEL ANILLO</h1>
-                    <p class="parrafo-modos">El anillo no deja de cerrarse y no durarás mucho en campo abierto. Cuanto más pequeño sea el anillo, más enfrentamientos tendrás con el resto de pelotones. Así que asegúrate de tener el arsenal adecuado para acabar con ellos.</p>
+                    <h1 class="subtitulo-modos">PERMANECE DENTRO DEL ANILLO</h1>
+                    <p class="subparrafo-modos">El anillo no deja de cerrarse y no durarás mucho en campo abierto. Cuanto más pequeño sea el anillo, más enfrentamientos tendrás con el resto de pelotones. Así que asegúrate de tener el arsenal adecuado para acabar con ellos.</p>
                   </div>
-                <img class="img-modos-dos" src="../img/wraith.jpg" alt="Wraith">
+                <img class="img-modos-dos borde-izquierda" src="../img/wraith.jpg" alt="Wraith">
                   
             </section>
             <section class="modos-contenedor-item-dos">
-                <img class="img-modos-dos" src="../img/algs-img-2.png" alt="Imagen ALGS dos">
+                <img class="img-modos-dos borde-derecha" src="../img/algs-img-2.png" alt="Imagen ALGS dos">
                 <div class="contenedor-texto-modos-dos">
-                  <h1 class="titulo-modos">HAZTE CON EL BOTÍN</h1>
-                  <p class="parrafo-modos">Llegarás con el equipo básico. Explora el mapa (y las cajas de enemigo de los caídos) para encontrar mejores equipos. Los necesitarás si pretendes sobrevivir.</p>
+                  <h1 class="subtitulo-modos">HAZTE CON EL BOTÍN</h1>
+                  <p class="subparrafo-modos">Llegarás con el equipo básico. Explora el mapa (y las cajas de enemigo de los caídos) para encontrar mejores equipos. Los necesitarás si pretendes sobrevivir.</p>
                 </div>  
             </section>
         </div>

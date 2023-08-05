@@ -1,12 +1,13 @@
 @import "variables";
 @import "mixin";
 
-
+.carousel{
+    padding-top: 5rem;
+}
 .carousel-img{
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
-    padding-top: 2rem;
 
 }
 
