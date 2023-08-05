@@ -3,6 +3,13 @@
 @import "mixin";
 
 /* mapas*/
+.main-mapas{
+    background: url(../img/background.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
 .mapa-contenedor-titulo{
     display: flex;
     flex-direction: column;

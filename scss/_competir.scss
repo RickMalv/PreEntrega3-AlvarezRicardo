@@ -1,7 +1,12 @@
 @import "variables";
+@import "mixin";
 
 .main-competir{
-    background-image: url(../img/background-competir.jpg) ;
+    background-image: url(../img/background-competir.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+
 }
 .competir-contenedor {
     display: flex;
@@ -12,11 +17,11 @@
 .competir-contenedor-item{
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
     justify-content: center;
     align-items: center;
-    margin-top: 4.5rem;
+    height: 100%;
+    width: 100%;
+    margin-top: 5.5rem;
     margin-bottom: 2rem;
 }
 .contenedor-texto-competir{
@@ -36,46 +41,46 @@
 .competir-contenedor-item-dos{
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
     justify-content: space-evenly;
     align-items: center;
+    height: 100%;
+    width: 100%;
     margin-bottom: 2rem;
+    background: rgb(29,23,24);
+    background: radial-gradient(circle, rgba(29,23,24,1) 0%, rgba(25,13,17,0.21052170868347342) 99%);
 }
 .img-competir{
     object-fit: cover;
-    height: 100%;
+    height: 70vh;
     width: 100%;
-    max-height: 400px;
-    object-position: center;
-    min-height: 200px;
+    filter: brightness(0.5);
+}
+.video-competir{
     display: none;
 }
 .img-competir-dos{
     object-fit: cover;
     width: 100%;
-    max-height: 400px;
-    object-position: center;
-    min-height: 200px;
 }
 
 .titulo-algs{
     color: $color-text;
+    font-family: duke-fill;
     text-align: center;
     text-transform: uppercase;
-    font-size: 2rem;
-    margin-top: 1rem;
-
+    font-size: clamp(2.5rem, calc(3.5vh + 0.7rem), 3.5rem);
+    padding: 0 2rem;
 }
 
-.parrafo-algs{
-    color: $color-text;
-    padding: 2rem;
-    text-align: center;
+.subtitulo-algs{
+    @include subtitulo;
 }
-.video{
+.subparrafo-algs{
+    @include subparrafo;
+}
+
+.video-competir{
     max-width: 100%;
-    position: relative;
 }
 .carousel-inner-competir{
     width: 100%;
@@ -83,25 +88,11 @@
     justify-content: center;
     grid-auto-flow: column;
 }
-@media screen and (min-width: 700px) {
-    .competir-contenedor-item-dos{
-        flex-direction: row;
-        justify-content: center;
-        padding: 2rem;
+.carousel-competir{
+    padding: 2rem;
+}
 
-    }
-    .titulo-algs{
-        font-size: 2rem;
-        width: 70%; 
-    }
-    .video{
-        display: none;
-    }
-    .img-competir{
-        display: block;
-    }
-    .img-competir-dos{
-        width: 50vw;
-        height: 600px;
-    }
+@media screen and (min-width: 700px) {
+    
+
 }

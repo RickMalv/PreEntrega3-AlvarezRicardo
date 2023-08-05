@@ -1,5 +1,3 @@
-@import "variables";
-
 @media screen and (min-width:600px) {
     //navbar
     header{
@@ -17,7 +15,7 @@
         background-color: transparent;
         align-self: center;
         &-variado{
-            margin-right: 3rem;
+            padding-right: 3rem;
         }
     }
     .home-img{
@@ -42,45 +40,69 @@
     .stacked-variado{
     justify-items: flex-end;
     width: 100%;
-
-}
-
-//mapa
-.mapa-contenedor{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    padding: 2rem;
-}
-
-
-
-//tienda
-.contenedor-tienda{
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-}
-
-//modos
-.modos-contenedor-item-dos{
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-
-}
-.img-modos-dos{
-    width: 90%;
-    object-fit: cover;
+        }
+    .boton-mas-info{
+        max-width: 20rem;
+        &-secundario{
+            max-width: 20rem;
+        }
     
-}
-.borde-izquierda{
-    border-left: $borde;
-}
-.borde-derecha{
-    border-right: $borde;
-}
-.parrafo-modos{
-    max-width: 57ch;
+    }    
+
+    //mapa
+    .mapa-contenedor{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 2rem;
+    }
+
+
+
+    //tienda
+    .contenedor-tienda{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    //modos
+    .modos-contenedor-item-dos{
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+
+    }
+    .img-modos-dos{
+        width: 90%;
+        object-fit: cover;
+        
+    }
+    .borde-izquierda{
+        border-left: $borde;
+    }
+    .borde-derecha{
+        border-right: $borde;
+    }
+    .parrafo-modos{
+        max-width: 57ch;
+    }
+    //competir
+    .competir-contenedor-item{
+        margin-top: 6.5rem;
+        &-dos{
+        flex-direction: row;
+        padding: 2rem;
+        }
+    }
+    .video-competir{
+        display: inline;
+    }
+    .img-competir{
+        display: none;
+    }
+    .img-competir-dos{
+        width: 50%;
+        aspect-ratio: 16/9;
 }
 }
 

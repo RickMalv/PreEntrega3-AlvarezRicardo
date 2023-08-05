@@ -251,7 +251,7 @@ footer {
   border-radius: 3px;
   text-decoration: none;
   padding: 1rem;
-  margin: 0.5rem;
+  margin: 1rem;
   width: 100%;
   width: 100%; }
   .boton-jugar:hover, .boton-trailer:hover {
@@ -267,7 +267,7 @@ footer {
   border-radius: 3px;
   text-decoration: none;
   padding: 1rem;
-  margin: 0.5rem;
+  margin: 1rem;
   width: 100%;
   text-transform: capitalize; }
   .boton-mas-info:hover {
@@ -283,7 +283,7 @@ footer {
   border-radius: 3px;
   text-decoration: none;
   padding: 1rem;
-  margin: 0.5rem;
+  margin: 1rem;
   width: 100%;
   color: #161616;
   text-transform: capitalize; }
@@ -291,7 +291,7 @@ footer {
     color: #DA292A; }
 
 .parrafo-uno {
-  padding-top: 1rem;
+  padding: 1rem 2rem;
   max-width: 40ch;
   color: #f3f3f3;
   font-size: clamp(10px, calc(2.8vw + 0.5rem), 20px);
@@ -313,7 +313,7 @@ footer {
   font-size: clamp(2rem, calc(2.1vw + 1rem), 5rem);
   font-weight: 400;
   color: #f3f3f3;
-  padding-top: 2rem; }
+  padding-top: 1rem; }
 
 .titulo-dos {
   font-family: duke-fill;
@@ -323,6 +323,12 @@ footer {
 
 /* mapas*/
 /* mapas*/
+.main-mapas {
+  background: url(../img/background.jpg);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover; }
+
 .mapa-contenedor-titulo {
   display: flex;
   flex-direction: column;
@@ -408,7 +414,10 @@ footer {
     color: #f3f3f3; }
 
 .main-competir {
-  background-image: url(../img/background-competir.jpg); }
+  background-image: url(../img/background-competir.jpg);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover; }
 
 .competir-contenedor {
   display: flex;
@@ -419,11 +428,11 @@ footer {
 .competir-contenedor-item {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  width: 100%;
   justify-content: center;
   align-items: center;
-  margin-top: 4.5rem;
+  height: 100%;
+  width: 100%;
+  margin-top: 5.5rem;
   margin-bottom: 2rem; }
 
 .contenedor-texto-competir {
@@ -442,43 +451,52 @@ footer {
 .competir-contenedor-item-dos {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  width: 100%;
   justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 2rem; }
+  height: 100%;
+  width: 100%;
+  margin-bottom: 2rem;
+  background: #1d1718;
+  background: radial-gradient(circle, #1d1718 0%, rgba(25, 13, 17, 0.210522) 99%); }
 
 .img-competir {
   object-fit: cover;
-  height: 100%;
+  height: 70vh;
   width: 100%;
-  max-height: 400px;
-  object-position: center;
-  min-height: 200px;
+  filter: brightness(0.5); }
+
+.video-competir {
   display: none; }
 
 .img-competir-dos {
   object-fit: cover;
-  width: 100%;
-  max-height: 400px;
-  object-position: center;
-  min-height: 200px; }
+  width: 100%; }
 
 .titulo-algs {
   color: #f3f3f3;
+  font-family: duke-fill;
   text-align: center;
   text-transform: uppercase;
-  font-size: 2rem;
-  margin-top: 1rem; }
+  font-size: clamp(2.5rem, calc(3.5vh + 0.7rem), 3.5rem);
+  padding: 0 2rem; }
 
-.parrafo-algs {
-  color: #f3f3f3;
-  padding: 2rem;
-  text-align: center; }
+.subtitulo-algs {
+  font-family: duke-fill;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: clamp(1.5rem, calc(3vh + 0.7rem), 2rem);
+  padding: 1rem;
+  color: #f3f3f3; }
 
-.video {
-  max-width: 100%;
-  position: relative; }
+.subparrafo-algs {
+  text-align: center;
+  font-size: clamp(1rem, calc(1vh + 0.6rem), 1.4rem);
+  max-width: 90%;
+  padding: 1rem;
+  color: #f3f3f3; }
+
+.video-competir {
+  max-width: 100%; }
 
 .carousel-inner-competir {
   width: 100%;
@@ -486,23 +504,10 @@ footer {
   justify-content: center;
   grid-auto-flow: column; }
 
-@media screen and (min-width: 700px) {
-  .competir-contenedor-item-dos {
-    flex-direction: row;
-    justify-content: center;
-    padding: 2rem; }
-  .titulo-algs {
-    font-size: 2rem;
-    width: 70%; }
-  .video {
-    display: none; }
-  .img-competir {
-    display: block; }
-  .img-competir-dos {
-    width: 50vw;
-    height: 600px; } }
+.carousel-competir {
+  padding: 2rem; }
 
-.carousel {
+.carousel-tienda {
   padding-top: 5rem; }
 
 .carousel-img {
@@ -570,7 +575,7 @@ footer {
     color: #DA292A; }
 
 .main-modos {
-  background-image: url(../img/background-competir.jpg); }
+  background-image: url(../img/bg-modos.jpg); }
 
 .modos-contenedor {
   display: flex;
@@ -581,10 +586,10 @@ footer {
 .modos-contenedor-item {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  width: 100%;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  width: 100%;
   padding-top: 5rem;
   margin-bottom: 2rem; }
 
@@ -636,12 +641,13 @@ footer {
   margin-top: 1rem; }
 
 .subtitulo-modos {
-  color: #f3f3f3;
   font-family: duke-fill;
   text-align: center;
   text-transform: uppercase;
   font-size: clamp(1.5rem, calc(3vh + 0.7rem), 2rem);
-  padding: 1rem; }
+  padding: 1rem;
+  color: #f3f3f3;
+  color: #161616; }
 
 .parrafo-modos {
   color: #f3f3f3;
@@ -651,11 +657,12 @@ footer {
   max-width: 90%; }
 
 .subparrafo-modos {
-  color: #f3f3f3;
   text-align: center;
   font-size: clamp(1rem, calc(1vh + 0.6rem), 1.4rem);
   max-width: 90%;
-  padding: 1rem; }
+  padding: 1rem;
+  color: #f3f3f3;
+  color: #161616; }
 
 @media screen and (min-width: 600px) {
   header .download {
@@ -666,7 +673,7 @@ footer {
     background-color: transparent;
     align-self: center; }
     .home-contenido-variado {
-      margin-right: 3rem; }
+      padding-right: 3rem; }
   .home-img-uno {
     aspect-ratio: auto;
     object-fit: cover;
@@ -682,6 +689,10 @@ footer {
   .stacked-variado {
     justify-items: flex-end;
     width: 100%; }
+  .boton-mas-info {
+    max-width: 20rem; }
+    .boton-mas-info-secundario {
+      max-width: 20rem; }
   .mapa-contenedor {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -702,7 +713,19 @@ footer {
   .borde-derecha {
     border-right: solid 6px #DA292A; }
   .parrafo-modos {
-    max-width: 57ch; } }
+    max-width: 57ch; }
+  .competir-contenedor-item {
+    margin-top: 6.5rem; }
+    .competir-contenedor-item-dos {
+      flex-direction: row;
+      padding: 2rem; }
+  .video-competir {
+    display: inline; }
+  .img-competir {
+    display: none; }
+  .img-competir-dos {
+    width: 50%;
+    aspect-ratio: 16/9; } }
 
 @media screen and (min-width: 1000px) {
   header .download {
@@ -770,11 +793,7 @@ footer {
 
 body {
   margin: 0;
-  padding: 0;
-  background: url(../img/background.jpg);
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover; }
+  padding: 0; }
 
 h1, h2, h3, p {
   margin: 0; }

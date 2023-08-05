@@ -1,7 +1,7 @@
 @import "variables";
 
 .main-modos{
-    background-image: url(../img/background-competir.jpg) ;
+    background-image: url(../img/bg-modos.jpg) ;
 }
 .modos-contenedor {
     display: flex;
@@ -12,10 +12,10 @@
 .modos-contenedor-item{
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    width: 100%;
     padding-top: 5rem;
     margin-bottom: 2rem;
 }
@@ -73,12 +73,8 @@
 }
 
 .subtitulo-modos{
-    color: $color-text;
-    font-family: $fuente-titulo;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: clamp(1.5rem, calc(3vh + 0.7rem), 2rem);
-    padding: 1rem;
+    @include subtitulo;
+    color: $color-text-secundario;
 }
 .parrafo-modos{
     color: $color-text;
@@ -88,9 +84,6 @@
     max-width: 90%;
 }
 .subparrafo-modos{
-    color: $color-text;
-    text-align: center;
-    font-size: clamp(1rem, calc(1vh + 0.6rem), 1.4rem);
-    max-width: 90%;
-    padding: 1rem;
+    @include subparrafo;
+    color: $color-text-secundario;
 }
